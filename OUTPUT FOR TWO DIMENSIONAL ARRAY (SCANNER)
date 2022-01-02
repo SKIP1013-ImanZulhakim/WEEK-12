@@ -1,0 +1,24 @@
+Enter Row length of an array : 
+3
+Enter column length of an array : 
+3
+Enter 9 Elements to Store in Array :
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Elements in Array are :
+Row [0]:  Column [0] :1
+Row [0]:  Column [1] :2
+Row [0]:  Column [2] :3
+Row [1]:  Column [0] :4
+Row [1]:  Column [1] :5
+Row [1]:  Column [2] :6
+Row [2]:  Column [0] :7
+Row [2]:  Column [1] :8
+Row [2]:  Column [2] :9
