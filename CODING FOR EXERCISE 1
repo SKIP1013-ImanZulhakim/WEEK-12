@@ -1,0 +1,27 @@
+package selfProgramming;
+
+public class Exercise1 {
+	public static void main (String[] args) {
+	      // Array of size 4x4 to hold integers.
+	      int[][] values =
+	      {
+	         { 1, 2, 3, 4 }, 
+	         { 2, 1, 4, 3 }, 
+	         { 3, 4, 1, 2 },
+	         { 4, 3, 2, 1 }
+	      };
+
+	      // Nested loops to print the array in tabular form.
+	      for (int row = 0; row < 4; row++)
+	      {
+	         for (int col = 0; col < 4; col++)
+	         {
+	            System.out.print(values[row][col] + " ");
+	         }
+
+	         System.out.println();    // Print new line.
+	      }
+
+	}
+	
+}
