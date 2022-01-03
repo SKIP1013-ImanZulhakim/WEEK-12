@@ -57,13 +57,17 @@ public class Exercise4 {
 		int sub=0;
 		 int[][] C=new int[2][2];//m*n
 	        for(int i=0;i<C.length;i++){
-	            for(int j=0;j<C[i].length;j++){
-	                
-	                sub+=A[i][j]-B[i][j];
+	            for(int j=0;j<C[i].length;j++){	             
+	                C[i][j] = A[i][j]-B[i][j];
 	            }
-	            for(int j=0;j<C[i].length;j++){
-	                System.out.printf("%4d",C[i][j]);
-	            }
+	        }
+	        for(int i=0;i<C.length;i++){
+	        	for(int j=0;j<C[i].length;j++){
+	        		System.out.printf("%4d", C[i][j]);
+	        }
+	        
+	           
+	            
 	        
 	            System.out.println();
 
