@@ -1,0 +1,21 @@
+Enter the elements for matrix A:
+10
+10
+10
+10
+Enter the elements for matrix B:
+1
+2
+3
+4
+Matrix A=
+  10  10
+  10  10
+
+Matrix B=
+   1   2
+   3   4
+
+Subtraction of Matrix A and Matrix B=
+  11  12
+  13  14
