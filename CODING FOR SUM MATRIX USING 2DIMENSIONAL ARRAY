@@ -1,0 +1,78 @@
+package selfProgramming;
+import java.util.*;
+public class Exercise5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+	
+		 int[][] A= new int[2][2];
+		 int[][] B= new int[2][2];
+		 
+		 System.out.println("Enter the elements for matrix A:");
+				
+			for(int i =0; i<2; i++) {
+				
+				for(int j=0; j<2;j++) {
+					A[i][j] = sc.nextInt();
+					
+				}
+			}
+			 System.out.println("Enter the elements for matrix B:");
+				
+				for(int i =0; i<2; i++) {
+					
+					for(int j=0; j<2;j++) {
+						B[i][j] = sc.nextInt();
+						
+					}
+				}       
+		//output for matrix A
+		
+		System.out.println("Matrix A=");		
+		for ( int i = 0; i < A.length; i++)
+			{
+			 for (int j = 0; j < A[i].length; j++)
+			   {
+				 
+			     System.out.printf("%4d", A[i][j]);
+			   }
+	         System.out.println();
+
+			}
+		System.out.println();
+		
+		//output for matrix B
+		System.out.println("Matrix B=");
+		for ( int i = 0; i < B.length; i++)
+		{
+		 for (int j = 0; j < B[i].length; j++)
+		   {
+		     System.out.printf("%4d", B[i][j]);
+		   }
+         System.out.println();
+
+		}
+		System.out.println();
+		System.out.println("Subtraction of Matrix A and Matrix B=");
+		int sub=0;
+		 int[][] C=new int[2][2];//m*n
+	        for(int i=0;i<C.length;i++){
+	            for(int j=0;j<C[i].length;j++){	             
+	                C[i][j] = A[i][j]+B[i][j];
+	            }
+	        }
+	        for(int i=0;i<C.length;i++){
+	        	for(int j=0;j<C[i].length;j++){
+	        		System.out.printf("%4d", C[i][j]);
+	        }
+	        
+	           
+	            
+	        
+	            System.out.println();
+
+	}
+
+	}
+}
+
