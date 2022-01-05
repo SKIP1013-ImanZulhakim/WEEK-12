@@ -1,0 +1,29 @@
+package selfProgramming;
+import java.util.Scanner;
+public class MethodOverloading {
+
+	public static void main(String[] args) {
+		int x = 200;
+		int age = readAge(x);
+		if(age<=9) {
+			System.out.println("Children category");
+		}else if(age<=19) {
+			System.out.println("Adolescent category");
+		}else if(age<=59) {
+			System.out.println("Adult category");
+		}else{
+			System.out.println("Old age category");
+		}
+	}
+	
+	public static int readAge(int max) {
+		Scanner sc = new Scanner(System.in);
+		int age = 0;
+		do {
+			System.out.println("Please enter your age(1-"+max+"):");
+			age= sc.nextInt();	
+		}while((age<1)|| (age>max));
+		return age;
+	}
+	
+}
