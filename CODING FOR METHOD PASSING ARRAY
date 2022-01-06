@@ -1,0 +1,45 @@
+package myMethod;
+
+public class PassingParameter {
+
+	public static void main(String[] args) {
+		int marks[] = {44,56,75,26,89};
+		int sum,avg,highMarks;
+		
+		System.out.println("The number of subjects: "+marks.length);
+		printMarks(marks);
+		
+		sum = sumMarks(marks);
+		System.out.println("The sum of marks: "+ sum);
+		
+		avg = sum/marks.length;
+		System.out.println("The average of marks: "+ avg);
+		
+		highMarks = printMax(marks);
+		System.out.println("The highest of marks: "+ highMarks);
+	}
+	
+	public static void printMarks(int[] a) {
+		for (int i=0; i<a.length; i++) {
+			System.out.println(a[i]+" ");
+		}
+	}
+	
+	public static int sumMarks(int[] a) {
+		int totalMarks=0;
+		for (int i=0; i<a.length; i++) {
+			totalMarks = totalMarks + a[i];
+	}
+		return totalMarks;
+	}
+	
+	public static int printMax(int[] a) {
+		int max =0;
+		for(int i=0; i<a.length;i++) {
+			if(a[i]>max) {
+				max=a[i];
+			}
+		}
+		return max;
+	}
+}
